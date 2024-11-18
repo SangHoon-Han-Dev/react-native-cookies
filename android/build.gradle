@@ -4,12 +4,14 @@ def safeExtGet(prop, fallback) {
 
 buildscript {
     repositories {
+        // HSH jCenter에서 변경
         mavenCentral()
     }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-    }
+    // HSH 제거
+    // dependencies {
+    //     classpath 'com.android.tools.build:gradle:2.3.3'
+    // }
 }
 
 apply plugin: 'com.android.library'
